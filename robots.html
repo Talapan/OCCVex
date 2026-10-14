@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robots | OCC Vex</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            oxley: {
+              navy: '#0A2540',
+              blue: '#1E3A5F',
+              red: '#C8102E',
+              light: '#F5F7FA'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-oxley-light text-gray-800">
+
+  <!-- Navigation -->
+  <nav class="bg-oxley-navy text-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold tracking-wide">
+        OCC <span class="text-oxley-red">Vex</span>
+      </a>
+      <div class="hidden md:flex gap-6 text-sm font-medium">
+        <a href="index.html" class="hover:text-oxley-red transition">Home</a>
+        <a href="robots.html" class="hover:text-oxley-red transition">Robots</a>
+        <a href="competitions.html" class="hover:text-oxley-red transition">Competitions</a>
+        <a href="gallery.html" class="hover:text-oxley-red transition">Gallery</a>
+        <a href="about.html" class="hover:text-oxley-red transition">About</a>
+        <a href="members.html" class="hover:text-oxley-red transition">Members</a>
+      </div>
+      <a href="/admin/" class="bg-oxley-red hover:bg-red-700 text-white text-sm px-4 py-2 rounded transition">
+        Admin Login
+      </a>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-bold text-oxley-navy mb-2">Our Robots</h1>
+    <p class="text-gray-600 mb-10">Team 32324A • Guinea Pigs</p>
+
+    <!-- Current Robot -->
+    <section class="mb-16">
+      <h2 class="text-xl font-semibold text-oxley-navy mb-4 border-b border-gray-200 pb-2">Current Robot – 2025-2026 Season</h2>
+      
+      <div class="bg-white rounded-xl shadow overflow-hidden">
+        <div class="bg-oxley-blue aspect-video flex items-center justify-center">
+          <div class="text-center text-gray-400">
+            <p class="text-lg">Robot Photo Placeholder</p>
+            <p class="text-sm mt-1">Upload real photos via Admin panel</p>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold mb-2">Robot Name (Coming Soon)</h3>
+          <p class="text-gray-600 text-sm mb-4">Description of the robot will go here. Admins can edit this later through the website.</p>
+          
+          <div class="grid sm:grid-cols-2 gap-4 text-sm">
+            <div>
+              <span class="font-semibold text-oxley-navy">Drive:</span> Placeholder
+            </div>
+            <div>
+              <span class="font-semibold text-oxley-navy">Intake:</span> Placeholder
+            </div>
+            <div>
+              <span class="font-semibold text-oxley-navy">Scoring:</span> Placeholder
+            </div>
+            <div>
+              <span class="font-semibold text-oxley-navy">Autonomous:</span> Placeholder
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Past Robots -->
+    <section>
+      <h2 class="text-xl font-semibold text-oxley-navy mb-4 border-b border-gray-200 pb-2">Past Robots</h2>
+      <p class="text-gray-500 text-sm">No past robots added yet. Admins can add them later.</p>
+    </section>
+  </main>
+
+  <footer class="bg-oxley-navy text-white py-8 mt-12">
+    <div class="max-w-6xl mx-auto px-4 text-center text-sm text-gray-400">
+      <p class="mb-2">© 2026 Oxley Christian College • Team 32324A Guinea Pigs</p>
+      <p>VEX V5 Robotics Competition • Chirnside Park, Victoria, Australia</p>
+    </div>
+  </footer>
+
+</body>
+</html>
