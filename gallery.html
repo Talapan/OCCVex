@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | OCC Vex</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            oxley: {
+              navy: '#0A2540',
+              blue: '#1E3A5F',
+              red: '#C8102E',
+              light: '#F5F7FA'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-oxley-light text-gray-800">
+
+  <!-- Navigation -->
+  <nav class="bg-oxley-navy text-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold tracking-wide">
+        OCC <span class="text-oxley-red">Vex</span>
+      </a>
+      <div class="hidden md:flex gap-6 text-sm font-medium">
+        <a href="index.html" class="hover:text-oxley-red transition">Home</a>
+        <a href="robots.html" class="hover:text-oxley-red transition">Robots</a>
+        <a href="competitions.html" class="hover:text-oxley-red transition">Competitions</a>
+        <a href="gallery.html" class="hover:text-oxley-red transition">Gallery</a>
+        <a href="about.html" class="hover:text-oxley-red transition">About</a>
+        <a href="members.html" class="hover:text-oxley-red transition">Members</a>
+      </div>
+      <a href="/admin/" class="bg-oxley-red hover:bg-red-700 text-white text-sm px-4 py-2 rounded transition">
+        Admin Login
+      </a>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-bold text-oxley-navy mb-2">Gallery</h1>
+    <p class="text-gray-600 mb-10">Photos and videos from the team</p>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Placeholder cards -->
+      <div class="bg-white rounded-xl shadow overflow-hidden">
+        <div class="bg-oxley-blue aspect-square flex items-center justify-center text-gray-400 text-sm">
+          Photo Placeholder
+        </div>
+        <div class="p-4">
+          <p class="text-sm text-gray-600">Competition / Build photo</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow overflow-hidden">
+        <div class="bg-oxley-blue aspect-square flex items-center justify-center text-gray-400 text-sm">
+          Photo Placeholder
+        </div>
+        <div class="p-4">
+          <p class="text-sm text-gray-600">Competition / Build photo</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow overflow-hidden">
+        <div class="bg-oxley-blue aspect-square flex items-center justify-center text-gray-400 text-sm">
+          Photo Placeholder
+        </div>
+        <div class="p-4">
+          <p class="text-sm text-gray-600">Competition / Build photo</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center text-gray-500 text-sm mt-10">
+      Real photos will be added by admins through the website.
+    </p>
+  </main>
+
+  <footer class="bg-oxley-navy text-white py-8 mt-12">
+    <div class="max-w-6xl mx-auto px-4 text-center text-sm text-gray-400">
+      <p class="mb-2">© 2026 Oxley Christian College • Team 32324A Guinea Pigs</p>
+      <p>VEX V5 Robotics Competition • Chirnside Park, Victoria, Australia</p>
+    </div>
+  </footer>
+
+</body>
+</html>
